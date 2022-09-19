@@ -3,12 +3,14 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
 }
 body{
     background-color: rgb(255, 255, 255);
     width: 100%;
     height: 90vh;  
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 
 }
 .barraSuperior img{
