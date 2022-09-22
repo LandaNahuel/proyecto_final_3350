@@ -3,13 +3,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box; 
-    
     font-weight: bold;
  }
  body{
    padding: 1px;
    width: 100vw;
-   height: 90vh;
  }
 .carousel-inner img{
    width: 100vw;
