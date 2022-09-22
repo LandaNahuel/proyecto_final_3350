@@ -64,3 +64,36 @@
        justify-content: center;
        flex-direction: column;
 }
+.containerForm {  display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   gap: 4px 0px;
+   grid-auto-flow: row;
+   grid-template-areas:
+     "contactanos contactanos"
+     "cosas mensaje"
+     "cosas mensaje";
+
+ }
+ 
+ .contactanos { grid-area: contactanos; 
+   display: flex;
+   justify-content: center;
+
+}
+ 
+ .cosas { grid-area: cosas; 
+   display: inline-grid;
+   justify-content: center;
+   align-content: space-between;
+ 
+}
+ 
+ .mensaje { grid-area: mensaje; 
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   
+}
+
+ 
