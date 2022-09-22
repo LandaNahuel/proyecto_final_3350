@@ -4,6 +4,8 @@
     padding: 0px;
     box-sizing: border-box; 
     font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
  }
  body{
    padding: 1px;
@@ -15,12 +17,12 @@
    object-fit: cover;
 }
  header{
-   position: absolute;
+   /*position: absolute;*/
    z-index: 10;
    background-color: rgba(255, 255, 255, 0.573);
    font-weight: bolder;
  }
- main h1{
+ .h1index {
    display: flex;
    z-index: 10;
    position: absolute;
@@ -28,8 +30,7 @@
    left: 50%;
    right: 5%;
    background-color:rgb(255, 255, 255,0.5);
-   font-family: 'Montserrat', sans-serif;
-   font-weight: bold;
+
 }
  footer{
    font-size: small;
@@ -57,4 +58,9 @@
 }
 .row d-flex justify-content-center{
    width: 90vw;
+}
+.secContact {
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
 }
