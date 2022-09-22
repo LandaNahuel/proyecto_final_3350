@@ -10,10 +10,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
  </head>
-<body class="bodyIndex">
- <header class="barraSuperior">
-    <img src="./favicon.ico" alt="">  
+<body class="w-auto p-3">
+ <header class="nav justify-content-center">
+    <ul class="nav justify-content-center p-3">
+        <li class="icono">
+            <img class=""  src="./favicon.ico" alt=""> 
+        </li>    
+        <li class="nav-item">        
+            <a class="nav-link active" href="#">INICIO</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="./paginas/productos.html">PRODUCTOS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="./paginas/menu.html">MENU</a>
+            
+        </li>
+        <li class="nav-item">        
+            <a class="nav-link active" href="./paginas/sucursales.html">SUCURSALES</a>
+        </li>
+        <li class="nav-item">        
+            <a class="nav-link active" href="./paginas/contacto.html">CONTACTO</a>
+        </li>
+    </ul>
+        <!--<img class="favicon" src="./favicon.ico" alt="">  
     <ul class="barraMenu">  
         <li>        
             <a class="linkMenu" href="#">INICIO</a>
@@ -30,13 +52,36 @@
         <li>        
             <a class="linkMenu" href="./paginas/contacto.html">CONTACTO</a>
         </li>
-    </ul>
+    </ul>-->
  </header>
  <main>
-    <div class="mainBlock">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imagenes/index_enlace_menu.jpg"  alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/index_enlace_productos.png"  alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/index_main.jpeg"  alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <h1>TU CAFE DE ESPECIALIDAD EN SAAVEDRA</h1>
+    <!--<div class="mainBlock">
         <img class="mainImg" src="./imagenes/index_main.jpeg" alt="">
         <h1>TU CAFE DE ESPECIALIDAD EN SAAVEDRA</h1>
-    </div>
+    </div>-->
  </main>
+ <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
