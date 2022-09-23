@@ -11,18 +11,19 @@
    padding: 1px;
    width: 100vw;
  }
-.carousel-inner img{
-   width: 100vw;
-   height: 100vh;
-   object-fit: cover;
-}
- header{
-   /*position: absolute;*/
+/*<< ESTILOS HEADER >>*/
+header{ 
    z-index: 10;
    background-color: rgba(255, 255, 255, 0.573);
    font-weight: bolder;
  }
- .h1index {
+/*<< ESTILOS MAIN >>*/
+.carousel-inner img{ /*<<pensado para pagina de inicio>>*/
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+}
+.h1index { /*<<pensado para pagina de inicio>>*/
    display: flex;
    z-index: 10;
    position: absolute;
@@ -32,6 +33,52 @@
    background-color:rgb(255, 255, 255,0.5);
 
 }
+.container-flow{ /*<<pensado para pagina de productos>>*/
+   font-family: 'Montserrat', sans-serif;
+   font-weight: bold;
+ }
+ .contactos{ /*<<pensado para pagina de contato>>*/
+   list-style: none;
+   flex-direction: column;
+}
+.row d-flex justify-content-center{ /*<<pensado para pagina de contato>>*/
+   width: 90vw;
+}
+.secContact { /*<<pensado para pagina de contato>>*/
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+}
+.containerForm { /*<<pensado para pagina de contato>>*/ 
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   gap: 4px 0px;
+   grid-auto-flow: row;
+   grid-template-areas:
+     "contactanos contactanos"
+     "cosas mensaje"
+     "cosas mensaje";
+ }
+ .contactanos { /*<<pensado para pagina de contato>>*/
+   grid-area: contactanos; 
+   display: flex;
+   justify-content: center;
+}
+ .cosas { /*<<pensado para pagina de contato>>*/
+   grid-area: cosas; 
+   display: inline-grid;
+   justify-content: center;
+   align-content: space-between;
+}
+ .mensaje { /*<<pensado para pagina de contato>>*/
+   grid-area: mensaje; 
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   
+}
+/*<< ESTILOS FOOTER >>*/
  footer{
    font-size: small;
    color: rgb(247, 182, 19);
@@ -46,57 +93,11 @@
     padding: 1px;
     margin: 2px;
  }
- .container-flow{
-   font-family: 'Montserrat', sans-serif;
-   font-weight: bold;
-   margin-top: 100px;
-   top: 100px;
- }
-.contactos{
-   list-style: none;
-   flex-direction: column;
-}
-.row d-flex justify-content-center{
-   width: 90vw;
-}
-.secContact {
-       display: flex;
-       justify-content: center;
-       flex-direction: column;
-}
-.containerForm {  display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr 1fr;
-   gap: 4px 0px;
-   grid-auto-flow: row;
-   grid-template-areas:
-     "contactanos contactanos"
-     "cosas mensaje"
-     "cosas mensaje";
 
- }
- 
- .contactanos { grid-area: contactanos; 
-   display: flex;
-   justify-content: center;
 
-}
- 
- .cosas { grid-area: cosas; 
-   display: inline-grid;
-   justify-content: center;
-   align-content: space-between;
- 
-}
- 
- .mensaje { grid-area: mensaje; 
-   display: flex;
-   flex-direction: column;
-   justify-content: end;
-   
-}
+/*<< ESTILOS MEDIA QUERIES >>*/
 @media  (max-width: 730px) {
-.containerForm {
+.containerForm { /*<<pensado para pagina de contato>>*/
    justify-content: center;
    height: 500px;
    grid-template-columns: 1fr;
@@ -105,7 +106,8 @@ grid-template-areas:
 "cosas"
 "mensaje"
 }
-.mensaje { grid-area: mensaje; 
+.mensaje { /*<<pensado para pagina de contato>>*/
+   grid-area: mensaje; 
    display: flex;
    flex-direction: column;
    align-items: center;
