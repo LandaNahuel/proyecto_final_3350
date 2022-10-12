@@ -66,20 +66,71 @@ header {
     grid-area: producto6; }
   .containerProd .producto7 {
     grid-area: producto7; }
-  .containerProd div {
+  .containerProd li {
     border: 2px solid #f7b613;
-    cursor: pointer; }
-    .containerProd div p {
-      background-color: rgba(5, 5, 5, 0.549);
-      color: white;
-      display: inline-flex;
-      position: relative;
-      top: -20%;
-      left: 10%; }
-    .containerProd div img {
+    cursor: pointer;
+    float: left;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%; }
+  .containerProd img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    z-index: 4;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out; }
+  .containerProd .caption {
+    /*pocicion sobre z imagen hover off NUEVO */
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all 0.45s ease-in-out;
+    -moz-transition: all 0.45s ease-in-out;
+    -o-transition: all 0.45s ease-in-out;
+    -ms-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out; }
+    .containerProd .caption .blur {
+      /*background on hover NUEVO */
+      background-color: rgba(0, 0, 0, 0.65);
+      height: 410px;
+      width: 450px;
+      z-index: 5;
+      position: absolute; }
+    .containerProd .caption .caption-text {
+      /*estilos textos on hover NUEVO*/
+      display: block;
+      z-index: 10;
+      color: #fff;
+      position: absolute;
       width: 100%;
       height: 100%;
-      object-fit: cover; }
+      justify-content: center;
+      align-items: center;
+      top: 10px;
+      left: 25px; }
+      .containerProd .caption .caption-text h1 {
+        text-align: center;
+        font-size: 3rem; }
+  .containerProd li:hover .caption {
+    /*mostrar texto on hover NUEVO */
+    opacity: 1; }
+  .containerProd li:hover img {
+    /*movimiento on hover NUEVO */
+    opacity: 1;
+    transform: scale(1.15, 1.15);
+    -webkit-transform: scale(1.15, 1.15);
+    -moz-transform: scale(1.15, 1.15);
+    -ms-transform: scale(1.15, 1.15);
+    -o-transform: scale(1.15, 1.15); }
 
 .sucursales {
   /*<<pensado para pagina de sucursales>>*/
@@ -218,20 +269,67 @@ footer {
       grid-area: producto6; }
     .containerProd .producto7 {
       grid-area: producto7; }
-    .containerProd div {
+    .containerProd li {
       border: 2px solid #f7b613;
-      cursor: pointer; }
-      .containerProd div p {
-        background-color: rgba(5, 5, 5, 0.549);
-        color: white;
-        display: inline-flex;
-        position: relative;
-        top: -20%;
-        left: 10%; }
-      .containerProd div img {
+      cursor: pointer;
+      float: left;
+      padding: 0px;
+      position: relative;
+      overflow: hidden; }
+      .containerProd li .caption-text {
+        /*estilos textos on hover NUEVO*/
+        display: block;
+        z-index: 10;
+        color: #fff;
+        position: absolute;
+        width: auto;
+        height: 200px;
+        text-align: center;
+        top: 10px;
+        left: 50px; }
+        .containerProd li .caption-text h1 {
+          font-size: 3rem; }
+      .containerProd li img {
         width: 100%;
         height: 100%;
-        object-fit: cover; } }
+        object-fit: cover;
+        margin: 0px;
+        padding: 0px;
+        float: left;
+        z-index: 4;
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        -ms-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out; }
+      .containerProd li .caption {
+        /*pocicion sobre z imagen hover off NUEVO */
+        cursor: pointer;
+        position: absolute;
+        opacity: 0;
+        -webkit-transition: all 0.45s ease-in-out;
+        -moz-transition: all 0.45s ease-in-out;
+        -o-transition: all 0.45s ease-in-out;
+        -ms-transition: all 0.45s ease-in-out;
+        transition: all 0.45s ease-in-out; }
+        .containerProd li .caption .blur {
+          /*background on hover NUEVO */
+          background-color: rgba(0, 0, 0, 0.65);
+          height: 410px;
+          width: 1000px;
+          z-index: 5;
+          position: absolute; }
+    .containerProd li:hover .caption {
+      /*mostrar texto on hover NUEVO */
+      opacity: 1; }
+    .containerProd li:hover img {
+      /*movimiento on hover NUEVO */
+      opacity: 1;
+      transform: scale(1.15, 1.15);
+      -webkit-transform: scale(1.15, 1.15);
+      -moz-transform: scale(1.15, 1.15);
+      -ms-transform: scale(1.15, 1.15);
+      -o-transform: scale(1.15, 1.15); } }
 
 @media (max-width: 550px) {
   .containerProd {
@@ -257,17 +355,64 @@ footer {
       grid-area: producto6; }
     .containerProd .producto7 {
       grid-area: producto7; }
-    .containerProd div {
+    .containerProd li {
       border: 2px solid #f7b613;
-      cursor: pointer; }
-      .containerProd div p {
-        background-color: rgba(5, 5, 5, 0.549);
-        color: white;
-        display: inline-flex;
-        position: relative;
-        top: -20%;
-        left: 10%; }
-      .containerProd div img {
+      cursor: pointer;
+      float: left;
+      padding: 0px;
+      position: relative;
+      overflow: hidden; }
+      .containerProd li .caption-text {
+        /*estilos textos on hover NUEVO*/
+        display: block;
+        z-index: 10;
+        color: #fff;
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        text-align: center;
+        top: 10px;
+        left: -10%; }
+        .containerProd li .caption-text h1 {
+          font-size: 3rem; }
+      .containerProd li img {
         width: 100%;
         height: 100%;
-        object-fit: cover; } }
+        object-fit: cover;
+        margin: 0px;
+        padding: 0px;
+        float: left;
+        z-index: 4;
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        -ms-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out; }
+      .containerProd li .caption {
+        /*pocicion sobre z imagen hover off NUEVO */
+        cursor: pointer;
+        position: absolute;
+        opacity: 0;
+        -webkit-transition: all 0.45s ease-in-out;
+        -moz-transition: all 0.45s ease-in-out;
+        -o-transition: all 0.45s ease-in-out;
+        -ms-transition: all 0.45s ease-in-out;
+        transition: all 0.45s ease-in-out; }
+        .containerProd li .caption .blur {
+          /*background on hover NUEVO */
+          background-color: rgba(0, 0, 0, 0.65);
+          height: 410px;
+          width: 1000px;
+          z-index: 5;
+          position: absolute; }
+    .containerProd li:hover .caption {
+      /*mostrar texto on hover NUEVO */
+      opacity: 1; }
+    .containerProd li:hover img {
+      /*movimiento on hover NUEVO */
+      opacity: 1;
+      transform: scale(1.15, 1.15);
+      -webkit-transform: scale(1.15, 1.15);
+      -moz-transform: scale(1.15, 1.15);
+      -ms-transform: scale(1.15, 1.15);
+      -o-transform: scale(1.15, 1.15); } }
