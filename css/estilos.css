@@ -90,6 +90,7 @@ header {
     transition: all 0.25s ease-in-out; }
   .containerProd .caption {
     /*pocicion sobre z imagen hover off NUEVO */
+    width: inherit;
     cursor: pointer;
     position: absolute;
     opacity: 0;
@@ -107,19 +108,17 @@ header {
       position: absolute; }
     .containerProd .caption .caption-text {
       /*estilos textos on hover NUEVO*/
-      display: block;
+      display: grid;
       z-index: 10;
-      color: #fff;
       position: absolute;
-      width: 100%;
-      height: 100%;
+      color: #fff;
+      width: 98%;
+      height: 200px;
       justify-content: center;
-      align-items: center;
-      top: 10px;
-      left: 25px; }
+      align-items: center; }
       .containerProd .caption .caption-text h1 {
         text-align: center;
-        font-size: 3rem; }
+        font-size: 2rem; }
   .containerProd li:hover .caption {
     /*mostrar texto on hover NUEVO */
     opacity: 1; }
@@ -278,17 +277,15 @@ footer {
       overflow: hidden; }
       .containerProd li .caption-text {
         /*estilos textos on hover NUEVO*/
-        display: block;
+        display: grid;
         z-index: 10;
-        color: #fff;
         position: absolute;
-        width: auto;
+        color: #fff;
+        width: 98%;
         height: 200px;
-        text-align: center;
-        top: 10px;
-        left: 50px; }
+        text-align: center; }
         .containerProd li .caption-text h1 {
-          font-size: 3rem; }
+          font-size: 2rem; }
       .containerProd li img {
         width: 100%;
         height: 100%;
@@ -304,6 +301,7 @@ footer {
         transition: all 0.25s ease-in-out; }
       .containerProd li .caption {
         /*pocicion sobre z imagen hover off NUEVO */
+        width: inherit;
         cursor: pointer;
         position: absolute;
         opacity: 0;
@@ -364,17 +362,15 @@ footer {
       overflow: hidden; }
       .containerProd li .caption-text {
         /*estilos textos on hover NUEVO*/
-        display: block;
+        display: grid;
         z-index: 10;
-        color: #fff;
         position: absolute;
-        width: 300px;
+        color: #fff;
+        width: 98%;
         height: 200px;
-        text-align: center;
-        top: 10px;
-        left: -10%; }
+        text-align: center; }
         .containerProd li .caption-text h1 {
-          font-size: 3rem; }
+          font-size: 2rem; }
       .containerProd li img {
         width: 100%;
         height: 100%;
@@ -390,6 +386,7 @@ footer {
         transition: all 0.25s ease-in-out; }
       .containerProd li .caption {
         /*pocicion sobre z imagen hover off NUEVO */
+        width: inherit;
         cursor: pointer;
         position: absolute;
         opacity: 0;
