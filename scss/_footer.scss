@@ -1,0 +1,14 @@
+footer{
+    font-size: small;
+    color: $color-pri;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    img{
+        border: 0.2px solid $fondo-blur-claro;
+        width: 50px;
+        padding: 1px;
+        margin: 2px;
+    }
+}

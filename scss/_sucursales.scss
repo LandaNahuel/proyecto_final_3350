@@ -1,0 +1,39 @@
+.sucursales{ /*<<pensado para pagina de sucursales>>*/
+    display: grid;
+    justify-content: center;
+    .encabezado{
+        display: inherit;
+        justify-content: center;
+    }
+}
+.boxsucu {  /*<<pensado para pagina de sucursales>>*/
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 300px 300px 300px 300px;
+    gap: 8px 4px;
+    grid-auto-flow: column dense;
+    grid-template-areas:
+    "texto1 sucu1"
+    "texto2 sucu2"
+    "texto3 sucu3"
+    "texto4 sucu4";
+    .texto1 { grid-area: texto1; }
+    .texto2 { grid-area: texto2; }
+    .texto3 { grid-area: texto3; }
+    .texto4 { grid-area: texto4; }
+    .sucu1 { grid-area: sucu1; }
+    .sucu2 { grid-area: sucu2; }
+    .sucu3 { grid-area: sucu3; }
+    .sucu4 { grid-area: sucu4; }
+    div{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

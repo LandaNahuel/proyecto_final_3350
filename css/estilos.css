@@ -1,29 +1,27 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-weight: bold;
-  font-family: 'Nunito', sans-serif;
-  font-weight: bold; }
-
-/*<< ESTILOS HEADER >>*/
 header {
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.573);
   font-weight: bolder;
   width: 100%; }
 
-/*<< ESTILOS MAIN >>*/
+footer {
+  font-size: small;
+  color: #f7b613;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center; }
+  footer img {
+    border: 0.2px solid rgba(255, 255, 255, 0.573);
+    width: 50px;
+    padding: 1px;
+    margin: 2px; }
+
 .carousel-inner img {
   /*<<pensado para pagina de inicio>>*/
   width: 100vw;
   height: 100vh;
   object-fit: cover; }
-
-.menuScroll img {
-  /*<<pensado para pagina de menu>*/
-  padding: 0px 5% 0px 5%;
-  width: 100%; }
 
 .h1index {
   /*<<pensado para pagina de inicio>>*/
@@ -33,15 +31,17 @@ header {
   top: 70%;
   left: 50%;
   right: 5%;
-  background-color: rgba(255, 255, 255, 0.445); }
+  background-color: rgba(255, 255, 255, 0.573); }
+
+.menuScroll img {
+  /*<<pensado para pagina de menu>*/
+  padding: 0px 5% 0px 5%;
+  width: 100%; }
 
 .container-flow {
   /*<<pensado para pagina de productos>>*/
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: bold; }
-
-.cajaProd {
-  width: 100vw; }
 
 .containerProd {
   /*<<pensado para pagina de productos nuevos>>*/
@@ -51,7 +51,7 @@ header {
   grid-template-rows: 200px 200px 200px;
   gap: 10px 10px;
   grid-auto-flow: column dense;
-  grid-template-areas: "producto1 producto2 producto3" "producto4 producto5 producto3" "producto4 producto6 producto7"; }
+  grid-template-areas: "producto1 producto2 producto3" "producto4 producto5 producto3" "producto4 producto6 producto7"; }
   .containerProd .producto4 {
     grid-area: producto4; }
   .containerProd .producto1 {
@@ -131,120 +131,8 @@ header {
     -ms-transform: scale(1.15, 1.15);
     -o-transform: scale(1.15, 1.15); }
 
-.sucursales {
-  /*<<pensado para pagina de sucursales>>*/
-  display: grid;
-  justify-content: center; }
-  .sucursales .encabezado {
-    display: inherit;
-    justify-content: center; }
-
-.boxsucu {
-  /*<<pensado para pagina de sucursales>>*/
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 300px 300px 300px 300px;
-  gap: 8px 4px;
-  grid-auto-flow: column dense;
-  grid-template-areas: "texto1 sucu1" "texto2 sucu2" "texto3 sucu3" "texto4 sucu4"; }
-  .boxsucu .texto1 {
-    grid-area: texto1; }
-  .boxsucu .texto2 {
-    grid-area: texto2; }
-  .boxsucu .texto3 {
-    grid-area: texto3; }
-  .boxsucu .texto4 {
-    grid-area: texto4; }
-  .boxsucu .sucu1 {
-    grid-area: sucu1; }
-  .boxsucu .sucu2 {
-    grid-area: sucu2; }
-  .boxsucu .sucu3 {
-    grid-area: sucu3; }
-  .boxsucu .sucu4 {
-    grid-area: sucu4; }
-  .boxsucu div {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .boxsucu div img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover; }
-
-.contactos {
-  /*<<pensado para pagina de contato>>*/
-  list-style: none;
-  flex-direction: column; }
-
-.row d-flex justify-content-center {
-  /*<<pensado para pagina de contato>>*/
-  width: 90vw; }
-
-.secContact {
-  /*<<pensado para pagina de contato>>*/
-  display: flex;
-  justify-content: center;
-  flex-direction: column; }
-
-.containerForm {
-  /*<<pensado para pagina de contato>>*/
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 10px 10px;
-  grid-auto-flow: row;
-  grid-template-areas: "contactanos contactanos" "cosas mensaje" "cosas mensaje"; }
-
-.contactanos {
-  /*<<pensado para pagina de contato>>*/
-  grid-area: contactanos;
-  display: flex;
-  justify-content: center; }
-
-.cosas {
-  /*<<pensado para pagina de contato>>*/
-  grid-area: cosas;
-  display: inline-grid;
-  justify-content: center;
-  align-content: space-between; }
-
-.mensaje {
-  /*<<pensado para pagina de contato>>*/
-  grid-area: mensaje;
-  display: flex;
-  flex-direction: column;
-  justify-content: end; }
-
-/*<< ESTILOS FOOTER >>*/
-footer {
-  font-size: small;
-  color: #f7b613;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center; }
-  footer img {
-    border: 0.2px solid #bbbaba;
-    width: 50px;
-    padding: 1px;
-    margin: 2px; }
-
 /*<< ESTILOS MEDIA QUERIES >>*/
 @media (max-width: 1000px) {
-  .containerForm {
-    /*<<pensado para pagina de contato>>*/
-    justify-content: center;
-    height: 500px;
-    grid-template-columns: 1fr;
-    grid-template-areas: "contactanos" "cosas" "mensaje"; }
-  .mensaje {
-    /*<<pensado para pagina de contato>>*/
-    grid-area: mensaje;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
   .containerProd {
     /*<<pensado para pagina de productos nuevos>>*/
     padding: 10px;
@@ -253,7 +141,7 @@ footer {
     grid-template-rows: 200px 200px 200px 200px 200px;
     gap: 10px 10px;
     grid-auto-flow: column dense;
-    grid-template-areas: "producto1 producto3" "producto2 producto3" "producto4 producto5" "producto4 producto6" "producto7 producto7"; }
+    grid-template-areas: "producto1 producto3" "producto2 producto3" "producto4 producto5" "producto4 producto6" "producto7 producto7"; }
     .containerProd .producto4 {
       grid-area: producto4; }
     .containerProd .producto1 {
@@ -338,7 +226,7 @@ footer {
     grid-template-rows: 200px 200px 200px 200px 200px 200px 200px;
     gap: 10px 10px;
     grid-auto-flow: column dense;
-    grid-template-areas: "producto1" "producto2" "producto3" "producto4" "producto5" "producto6" "producto7"; }
+    grid-template-areas: "producto1" "producto2" "producto3" "producto4" "producto5" "producto6" "producto7"; }
     .containerProd .producto4 {
       grid-area: producto4; }
     .containerProd .producto1 {
@@ -413,3 +301,112 @@ footer {
       -moz-transform: scale(1.15, 1.15);
       -ms-transform: scale(1.15, 1.15);
       -o-transform: scale(1.15, 1.15); } }
+
+.sucursales {
+  /*<<pensado para pagina de sucursales>>*/
+  display: grid;
+  justify-content: center; }
+  .sucursales .encabezado {
+    display: inherit;
+    justify-content: center; }
+
+.boxsucu {
+  /*<<pensado para pagina de sucursales>>*/
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 300px 300px 300px 300px;
+  gap: 8px 4px;
+  grid-auto-flow: column dense;
+  grid-template-areas: "texto1 sucu1" "texto2 sucu2" "texto3 sucu3" "texto4 sucu4"; }
+  .boxsucu .texto1 {
+    grid-area: texto1; }
+  .boxsucu .texto2 {
+    grid-area: texto2; }
+  .boxsucu .texto3 {
+    grid-area: texto3; }
+  .boxsucu .texto4 {
+    grid-area: texto4; }
+  .boxsucu .sucu1 {
+    grid-area: sucu1; }
+  .boxsucu .sucu2 {
+    grid-area: sucu2; }
+  .boxsucu .sucu3 {
+    grid-area: sucu3; }
+  .boxsucu .sucu4 {
+    grid-area: sucu4; }
+  .boxsucu div {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .boxsucu div img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+
+.contactos {
+  /*<<pensado para pagina de contato>>*/
+  list-style: none;
+  flex-direction: column; }
+
+.row d-flex justify-content-center {
+  /*<<pensado para pagina de contato>>*/
+  width: 90vw; }
+
+.secContact {
+  /*<<pensado para pagina de contato>>*/
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.containerForm {
+  /*<<pensado para pagina de contato>>*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas: "contactanos contactanos" "cosas mensaje" "cosas mensaje"; }
+
+.contactanos {
+  /*<<pensado para pagina de contato>>*/
+  grid-area: contactanos;
+  display: flex;
+  justify-content: center; }
+
+.cosas {
+  /*<<pensado para pagina de contato>>*/
+  grid-area: cosas;
+  display: inline-grid;
+  justify-content: center;
+  align-content: space-between; }
+
+.mensaje {
+  /*<<pensado para pagina de contato>>*/
+  grid-area: mensaje;
+  display: flex;
+  flex-direction: column;
+  justify-content: end; }
+
+/*<< ESTILOS MEDIA QUERIES >>*/
+@media (max-width: 1000px) {
+  .containerForm {
+    /*<<pensado para pagina de contato>>*/
+    justify-content: center;
+    height: 500px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "contactanos" "cosas" "mensaje"; }
+  .mensaje {
+    /*<<pensado para pagina de contato>>*/
+    grid-area: mensaje;
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold; }

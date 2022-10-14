@@ -1,0 +1,14 @@
+.carousel-inner img{ /*<<pensado para pagina de inicio>>*/
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+}
+.h1index { /*<<pensado para pagina de inicio>>*/
+    display: flex;
+    z-index: 10;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    right: 5%;
+    background-color:$fondo-blur-claro
+ }
