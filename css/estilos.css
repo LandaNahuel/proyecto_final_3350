@@ -6,21 +6,54 @@ header {
 
 footer {
   font-size: small;
-  color: #f7b613;
+  color: #0077ff;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center; }
   footer img {
     border: 0.2px solid rgba(255, 255, 255, 0.573);
-    width: 50px;
-    padding: 1px;
-    margin: 2px; }
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    object-fit: contain; }
+
+@media (max-width: 750px) {
+  footer {
+    font-size: small;
+    color: #0077ff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center; }
+    footer img {
+      border: 0.2px solid rgba(255, 255, 255, 0.573);
+      width: 100%;
+      height: 50%;
+      position: absolute;
+      z-index: -1;
+      object-fit: cover; } }
+
+@media (max-width: 430px) {
+  footer {
+    font-size: small;
+    color: #0077ff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center; }
+    footer img {
+      border: 0.2px solid rgba(255, 255, 255, 0.573);
+      width: 100%;
+      height: 90%;
+      position: absolute;
+      z-index: -1;
+      object-fit: cover; } }
 
 .carousel-inner img {
   /*<<pensado para pagina de inicio>>*/
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   object-fit: cover; }
 
 .h1index {
@@ -28,10 +61,22 @@ footer {
   display: flex;
   z-index: 10;
   position: absolute;
-  top: 70%;
+  top: 55%;
   left: 50%;
-  right: 5%;
+  right: 10%;
   background-color: rgba(255, 255, 255, 0.573); }
+
+/*<< ESTILOS MEDIA QUERIES >>*/
+@media (max-width: 600px) {
+  .h1index {
+    /*<<pensado para pagina de inicio>>*/
+    display: flex;
+    z-index: 10;
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    right: 5%;
+    background-color: rgba(255, 255, 255, 0.573); } }
 
 .menuScroll img {
   /*<<pensado para pagina de menu>*/

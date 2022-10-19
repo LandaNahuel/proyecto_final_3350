@@ -1,66 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INICIO</title>
-    <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INICIO</title>
+  <link rel="stylesheet" href="./css/estilos.css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 <body class="w-auto">
-<header class="nav justify-content-center position-absolute">
-    <nav>
-        <ul class="nav justify-content-center p-3">
-            <li class="icono">
-                <img class=""  src="./favicon.ico" alt="">
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">INICIO</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="./paginas/productos.html">PRODUCTOS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="./paginas/menu.html">MENU</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="./paginas/sucursales.html">SUCURSALES</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="./paginas/contacto.html">CONTACTO</a>
-            </li>
-        </ul>
-    </nav>
+<header class=" d-flex justify-content-center"  >
+  <nav class="navbar navbar-expand-sm navbar-light bg-light ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- logo -->
+    <a class="navbar-brand ms-2" href="#">
+      <img src="file:///C:/Users/Compras/Desktop/Nahuel/Nahuel_Landazabal_COMISION33050/PROYECTO_FINAL/favicon.ico" width="50px" height="50px" alt="">
+    </a>
+    <!-- enlaces -->
+    <div class="collapse navbar-collapse" id="opciones">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="./paginas/productos.html">PRODUCTOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="./paginas/menu.html">MENU</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="./paginas/sucursales.html">SUCURSALES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="./paginas/contacto.html">CONTACTO</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>
 <main>
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./imagenes/index_enlace_menu.jpg"  alt="Una taza de cafe">
-          </div>
-          <div class="carousel-item">
-            <img src="./imagenes/index_enlace_productos.png"  alt="Una persona sosteniendo una taza de cafe">
-          </div>
-          <div class="carousel-item">
-            <img src="./imagenes/index_main.jpeg"  alt="Una maquina de cafe profecional">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+  <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./imagenes/img_index1.jpg"  alt="gente tomando cafe">
       </div>
-      <h1 class="h1index">TU CAFE DE ESPECIALIDAD EN SAAVEDRA</h1>
+      <div class="carousel-item">
+        <img src="./imagenes/img_index2.jpg"  alt="Una maquina de cafe profecional">
+      </div>
+      <div class="carousel-item">
+        <img src="./imagenes/img_index3.jpg"  alt="un desayuno completo">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <h1 class="h1index">TU CAFE DE ESPECIALIDAD EN SAAVEDRA</h1>
 </main>
+<footer>
+  <div class="col text-center w-auto p-2">
+      <ul class="nav justify-content-center w-auto p-3">
+          <li class="nav-item">
+              <a class="nav-link active" href="#">INICIO</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="./paginas/productos.html">PRODUCTOS</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="./paginas/menu.html">MENU</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="./paginas/sucursales.html">SUCURSALES</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="./paginas/contacto.html">CONTACTO</a>
+          </li>
+      </ul>
+      <ul class="contactos">
+          <li>5491161965270</a></li>
+          <li>11 6196 5270</a></li>
+          <li>cafeina@doccafe.com.ar</a></li>
+          <li>Aráoz 645, Villa Crespo, Buenos Aires</li>
+      </ul>
+      <div class="container">
+          <div class="row">
+              <div class="col">
+                  © Copyright COSECA café, café de especialidad - 2022
+              </div>
+              <div class="col">
+                  Creado por Nahuel Landazabal COMISION 3350
+              </div>
+              <div class="col">
+                  Todos los derechos reservados.
+              </div>
+          </div>
+          <div class="row">
+              <div class="col">
+                  Defensa de las y los consumidores. Para reclamos
+                  <a  href="https://www.coderhouse.com" target="_blank">ingrese aquí</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <img src="./imagenes/waves.png" alt="olas">
+</footer>
 <script src="./js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
