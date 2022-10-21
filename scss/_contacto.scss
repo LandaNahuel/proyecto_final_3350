@@ -1,3 +1,4 @@
+
 .contactos{ /*<<pensado para pagina de contato>>*/
     list-style: none;
     flex-direction: column;
@@ -12,18 +13,19 @@
 }
 .divForm{
     display: flex;
-    color: $color-sec;
+    color: $color-pri;
     justify-content: center;
     .containerForm { /*<<pensado para pagina de contato>>*/
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr;
         gap: 10px 10px;
         width: 90vw;
+        padding: 2%;
         padding-bottom: 20px;
         justify-content: center;
         border: 2px solid $color-pri;
-        box-shadow: 0px 0px 37px 0px $color-pri;
+        border-radius: 30px;
         grid-auto-flow: row;
         grid-template-areas:
         "contactanos contactanos"
@@ -58,20 +60,98 @@
 
 
 /*<< ESTILOS MEDIA QUERIES >>*/
-@media  (max-width: 1000px) {
-    .containerForm { /*<<pensado para pagina de contato>>*/
-        justify-content: center;
-        height: 500px;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "contactanos"
-        "cosas"
-        "mensaje"
-    }
-    .mensaje { /*<<pensado para pagina de contato>>*/
-        grid-area: mensaje;
+@media  (max-width: 890px) {
+    .divForm{
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        .containerForm { /*<<pensado para pagina de contato>>*/
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.25fr 1fr 1fr ;
+            gap: 10px 10px;
+            width: 50vw;
+            padding: 3%;
+            padding-bottom: 20px;
+            justify-content: center;
+            border: 2px solid $color-pri;
+            grid-auto-flow: row;
+            grid-template-areas:
+            "contactanos"
+            "cosas "
+            "mensaje";
+            .contactanos { /*<<pensado para pagina de contato>>*/
+                grid-area: contactanos;
+                display: flex;
+                justify-content: center;
+                align-self: center;
+            }
+            .cosas { /*<<pensado para pagina de contato>>*/
+                grid-area: cosas;
+                display: inline-grid;
+                justify-content: center;
+                align-content: space-between;
+                padding: 2px 2px 2px 2px;
+                form{
+                    display: contents;
+                    text-align-last: justify;
+                }
+            }
+            .mensaje { /*<<pensado para pagina de contato>>*/
+                grid-area: mensaje;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+            }
+        }
     }
+
+}
+@media  (max-width: 785px) {
+    .divForm{
+        display: flex;
+        justify-content: center;
+        .containerForm { /*<<pensado para pagina de contato>>*/
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.25fr 1fr 1fr ;
+            gap: 10px 10px;
+            width: 80vw;
+            padding: 3%;
+            padding-bottom: 20px;
+            justify-content: center;
+            border: 2px solid $color-pri;
+            grid-auto-flow: row;
+            grid-template-areas:
+            "contactanos"
+            "cosas "
+            "mensaje";
+            .contactanos { /*<<pensado para pagina de contato>>*/
+                grid-area: contactanos;
+                display: flex;
+                justify-content: center;
+                align-self: center;
+            }
+            .cosas { /*<<pensado para pagina de contato>>*/
+                grid-area: cosas;
+                display: inline-grid;
+                justify-content: center;
+                align-content: space-between;
+                padding: 2px 2px 2px 2px;
+                form{
+                    display: contents;
+                    text-align-last: justify;
+                    div input{
+                        width: 80%;
+                    }
+                }
+            }
+            .mensaje { /*<<pensado para pagina de contato>>*/
+                grid-area: mensaje;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+            }
+        }
+    }
+
 }

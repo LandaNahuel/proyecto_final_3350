@@ -12,13 +12,12 @@ footer {
   flex-wrap: wrap;
   align-items: center; }
   footer img {
-    border: 0.2px solid rgba(255, 255, 255, 0.573);
     width: 100%;
     position: absolute;
     z-index: -1;
-    object-fit: contain; }
+    object-fit: cover; }
 
-@media (max-width: 750px) {
+@media (max-width: 890px) {
   footer {
     font-size: small;
     color: #0077ff;
@@ -27,7 +26,6 @@ footer {
     flex-wrap: wrap;
     align-items: center; }
     footer img {
-      border: 0.2px solid rgba(255, 255, 255, 0.573);
       width: 100%;
       height: 50%;
       position: absolute;
@@ -43,7 +41,6 @@ footer {
     flex-wrap: wrap;
     align-items: center; }
     footer img {
-      border: 0.2px solid rgba(255, 255, 255, 0.573);
       width: 100%;
       height: 90%;
       position: absolute;
@@ -96,7 +93,7 @@ footer {
   width: 90vw;
   justify-content: center;
   border: 2px solid #f7b613;
-  box-shadow: 0px 0px 37px 0px #f7b613;
+  border-radius: 30px;
   padding: 0 10px 0 15px;
   grid-auto-flow: row;
   grid-template-areas: "tituloMenu tituloMenu " "titProd1  prec1" "descProd1 prec1" "titProd2  prec2" "descProd2 prec2" "titProd3  prec3" "descProd3 prec3" "titProd4  prec4" "descProd4 prec4" "titProd5  prec5" "descProd5 prec5" "titProd6  prec6" "descProd6 prec6" "titProd7  prec7" "descProd7 prec7" "titProd8  prec8" "descProd8 prec8" "titProd9  prec9" "descProd9 prec9"; }
@@ -170,7 +167,6 @@ footer {
     width: 90vw;
     justify-content: center;
     border: 2px solid $color-pri;
-    box-shadow: 0px 0px 37px 0px $color-pri;
     padding: 0 10px 0 15px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -251,6 +247,7 @@ footer {
     grid-area: producto7; }
   .containerProd li {
     border: 2px solid #f7b613;
+    border-radius: 10px;
     cursor: pointer;
     float: left;
     padding: 0px;
@@ -518,7 +515,6 @@ footer {
   .boxsucu .sucu4 {
     grid-area: sucu4; }
   .boxsucu div {
-    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -544,19 +540,20 @@ footer {
 
 .divForm {
   display: flex;
-  color: #0077ff;
+  color: #f7b613;
   justify-content: center; }
   .divForm .containerForm {
     /*<<pensado para pagina de contato>>*/
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
     gap: 10px 10px;
     width: 90vw;
+    padding: 2%;
     padding-bottom: 20px;
     justify-content: center;
     border: 2px solid #f7b613;
-    box-shadow: 0px 0px 37px 0px #f7b613;
+    border-radius: 30px;
     grid-auto-flow: row;
     grid-template-areas: "contactanos contactanos" "cosas mensaje" "cosas mensaje"; }
     .divForm .containerForm .contactanos {
@@ -583,19 +580,87 @@ footer {
       justify-content: end; }
 
 /*<< ESTILOS MEDIA QUERIES >>*/
-@media (max-width: 1000px) {
-  .containerForm {
-    /*<<pensado para pagina de contato>>*/
-    justify-content: center;
-    height: 500px;
-    grid-template-columns: 1fr;
-    grid-template-areas: "contactanos" "cosas" "mensaje"; }
-  .mensaje {
-    /*<<pensado para pagina de contato>>*/
-    grid-area: mensaje;
+@media (max-width: 890px) {
+  .divForm {
     display: flex;
-    flex-direction: column;
-    align-items: center; } }
+    justify-content: center; }
+    .divForm .containerForm {
+      /*<<pensado para pagina de contato>>*/
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.25fr 1fr 1fr;
+      gap: 10px 10px;
+      width: 50vw;
+      padding: 3%;
+      padding-bottom: 20px;
+      justify-content: center;
+      border: 2px solid #f7b613;
+      grid-auto-flow: row;
+      grid-template-areas: "contactanos" "cosas " "mensaje"; }
+      .divForm .containerForm .contactanos {
+        /*<<pensado para pagina de contato>>*/
+        grid-area: contactanos;
+        display: flex;
+        justify-content: center;
+        align-self: center; }
+      .divForm .containerForm .cosas {
+        /*<<pensado para pagina de contato>>*/
+        grid-area: cosas;
+        display: inline-grid;
+        justify-content: center;
+        align-content: space-between;
+        padding: 2px 2px 2px 2px; }
+        .divForm .containerForm .cosas form {
+          display: contents;
+          text-align-last: justify; }
+      .divForm .containerForm .mensaje {
+        /*<<pensado para pagina de contato>>*/
+        grid-area: mensaje;
+        display: flex;
+        flex-direction: column;
+        justify-content: end; } }
+
+@media (max-width: 785px) {
+  .divForm {
+    display: flex;
+    justify-content: center; }
+    .divForm .containerForm {
+      /*<<pensado para pagina de contato>>*/
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.25fr 1fr 1fr;
+      gap: 10px 10px;
+      width: 80vw;
+      padding: 3%;
+      padding-bottom: 20px;
+      justify-content: center;
+      border: 2px solid #f7b613;
+      grid-auto-flow: row;
+      grid-template-areas: "contactanos" "cosas " "mensaje"; }
+      .divForm .containerForm .contactanos {
+        /*<<pensado para pagina de contato>>*/
+        grid-area: contactanos;
+        display: flex;
+        justify-content: center;
+        align-self: center; }
+      .divForm .containerForm .cosas {
+        /*<<pensado para pagina de contato>>*/
+        grid-area: cosas;
+        display: inline-grid;
+        justify-content: center;
+        align-content: space-between;
+        padding: 2px 2px 2px 2px; }
+        .divForm .containerForm .cosas form {
+          display: contents;
+          text-align-last: justify; }
+          .divForm .containerForm .cosas form div input {
+            width: 80%; }
+      .divForm .containerForm .mensaje {
+        /*<<pensado para pagina de contato>>*/
+        grid-area: mensaje;
+        display: flex;
+        flex-direction: column;
+        justify-content: end; } }
 
 * {
   margin: 0px;
@@ -604,3 +669,6 @@ footer {
   font-weight: bold;
   font-family: "Nunito", sans-serif;
   font-weight: bold; }
+
+main {
+  color: black; }

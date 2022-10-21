@@ -22,6 +22,7 @@
     .producto7 { grid-area: producto7;}
     li{
         border: 2px solid $color-pri;
+        border-radius: 10px;
         cursor: pointer;
         float: left;
         padding: 0px;

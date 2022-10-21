@@ -1,3 +1,4 @@
+
 .sucursales{ /*<<pensado para pagina de sucursales>>*/
     display: grid;
     justify-content: center;
@@ -26,7 +27,6 @@
     .sucu3 { grid-area: sucu3; }
     .sucu4 { grid-area: sucu4; }
     div{
-        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;

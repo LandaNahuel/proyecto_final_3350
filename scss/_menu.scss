@@ -15,7 +15,7 @@
     width: 90vw;
     justify-content: center;
     border: 2px solid $color-pri;
-    box-shadow: 0px 0px 37px 0px $color-pri;
+    border-radius: 30px;
     padding: 0 10px 0 15px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -83,7 +83,6 @@
     width: 90vw;
     justify-content: center;
     border: 2px solid $color-pri;
-    box-shadow: 0px 0px 37px 0px $color-pri;
     padding: 0 10px 0 15px;
     grid-auto-flow: row;
     grid-template-areas:
