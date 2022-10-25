@@ -1,3 +1,9 @@
+.encabezado{
+    display: flex;
+    justify-content: center;
+    padding: 2% 5% 3% 5%;
+    margin: 10px;
+}
 .container-flow{ /*<<pensado para pagina de productos>>*/
     font-family: $fuente-pri;
     font-weight: bold;
@@ -74,6 +80,11 @@
                 h1{
                     text-align: center;
                     font-size: 2rem;
+                    padding: 0px 20px 0px 20px;
+                }
+                p{
+                    text-align: center;
+                    padding: 0px 20px 0px 20px;
                 }
             }
         }

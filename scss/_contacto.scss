@@ -18,7 +18,7 @@
     .containerForm { /*<<pensado para pagina de contato>>*/
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         gap: 10px 10px;
         width: 90vw;
         padding: 2%;
@@ -28,15 +28,8 @@
         border-radius: 30px;
         grid-auto-flow: row;
         grid-template-areas:
-        "contactanos contactanos"
         "cosas mensaje"
         "cosas mensaje";
-        .contactanos { /*<<pensado para pagina de contato>>*/
-            grid-area: contactanos;
-            display: flex;
-            justify-content: center;
-            align-self: center;
-        }
         .cosas { /*<<pensado para pagina de contato>>*/
             grid-area: cosas;
             display: inline-grid;
@@ -67,7 +60,7 @@
         .containerForm { /*<<pensado para pagina de contato>>*/
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 0.25fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr ;
             gap: 10px 10px;
             width: 50vw;
             padding: 3%;
@@ -76,15 +69,8 @@
             border: 2px solid $color-pri;
             grid-auto-flow: row;
             grid-template-areas:
-            "contactanos"
             "cosas "
             "mensaje";
-            .contactanos { /*<<pensado para pagina de contato>>*/
-                grid-area: contactanos;
-                display: flex;
-                justify-content: center;
-                align-self: center;
-            }
             .cosas { /*<<pensado para pagina de contato>>*/
                 grid-area: cosas;
                 display: inline-grid;
@@ -113,7 +99,7 @@
         .containerForm { /*<<pensado para pagina de contato>>*/
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 0.25fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr ;
             gap: 10px 10px;
             width: 80vw;
             padding: 3%;
@@ -122,15 +108,8 @@
             border: 2px solid $color-pri;
             grid-auto-flow: row;
             grid-template-areas:
-            "contactanos"
             "cosas "
             "mensaje";
-            .contactanos { /*<<pensado para pagina de contato>>*/
-                grid-area: contactanos;
-                display: flex;
-                justify-content: center;
-                align-self: center;
-            }
             .cosas { /*<<pensado para pagina de contato>>*/
                 grid-area: cosas;
                 display: inline-grid;

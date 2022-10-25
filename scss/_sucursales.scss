@@ -2,21 +2,25 @@
 .sucursales{ /*<<pensado para pagina de sucursales>>*/
     display: grid;
     justify-content: center;
-    .encabezado{
-        display: inherit;
-        justify-content: center;
-    }
+    padding: 3% 2% 3% 2%;
+    margin: 10px;
+    border: 2px solid #f7b613;
+    border-radius: 21px;
 }
 .boxsucu {  /*<<pensado para pagina de sucursales>>*/
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 300px 300px 300px 300px;
-    gap: 8px 4px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 300px 50px 300px 50px 300px 50px 300px;
+    gap: 8px 0px;
     grid-auto-flow: column dense;
     grid-template-areas:
+    "titsuc1 titsuc1"
     "texto1 sucu1"
+    "titsuc2 titsuc2"
     "texto2 sucu2"
+    "titsuc3 titsuc3"
     "texto3 sucu3"
+    "titsuc4 titsuc4"
     "texto4 sucu4";
     .texto1 { grid-area: texto1; }
     .texto2 { grid-area: texto2; }
@@ -26,14 +30,62 @@
     .sucu2 { grid-area: sucu2; }
     .sucu3 { grid-area: sucu3; }
     .sucu4 { grid-area: sucu4; }
+    .titsuc1 {grid-area: titsuc1;}
+    .titsuc2 {grid-area: titsuc2;}
+    .titsuc3 {grid-area: titsuc3;}
+    .titsuc4 {grid-area: titsuc4;}
     div{
+        padding: 0px 20px 50px 20px;
         display: flex;
         justify-content: center;
         align-items: center;
+        border-bottom: 1px solid rgb(158, 151, 113);
         img{
             height: 100%;
             width: 100%;
             object-fit: cover;
         }
+        iframe{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        h2{
+            text-align: center;
+        }
     }
+}
+@media  (max-width: 1000px){
+    .boxsucu {  /*<<pensado para pagina de sucursales>>*/
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 50px 300px 300px 50px 300px 300px 50px 300px 300px 50px 300px 300px;
+        gap: 8px 0px;
+        grid-auto-flow: column dense;
+        grid-template-areas:
+        "titsuc1"
+        "texto1"
+        "sucu1"
+        "titsuc2"
+        "texto2"
+        "sucu2"
+        "titsuc3"
+        "texto3"
+        "sucu3"
+        "titsuc4"
+        "texto4"
+        "sucu4";
+        .texto1 { grid-area: texto1; }
+        .texto2 { grid-area: texto2; }
+        .texto3 { grid-area: texto3; }
+        .texto4 { grid-area: texto4; }
+        .sucu1 { grid-area: sucu1; }
+        .sucu2 { grid-area: sucu2; }
+        .sucu3 { grid-area: sucu3; }
+        .sucu4 { grid-area: sucu4; }
+        .titsuc1 {grid-area: titsuc1;}
+        .titsuc2 {grid-area: titsuc2;}
+        .titsuc3 {grid-area: titsuc3;}
+        .titsuc4 {grid-area: titsuc4;}
+        }
 }

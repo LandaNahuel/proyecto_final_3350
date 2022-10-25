@@ -14,13 +14,13 @@
 </head>
 <body class="w-auto">
 <header class=" d-flex justify-content-center"  >
-    <nav class="navbar navbar-expand-sm navbar-light bg-light ">
+    <nav class="navbar navbar-expand-sm navbar-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- logo -->
         <a class="navbar-brand ms-2" href="#">
-            <img src="file:///C:/Users/Compras/Desktop/Nahuel/Nahuel_Landazabal_COMISION33050/PROYECTO_FINAL/favicon.ico" width="50px" height="50px" alt="">
+            <img src="../favicon.ico" width="50px" height="50px" alt="">
         </a>
         <!-- enlaces -->
         <div class="collapse navbar-collapse" id="opciones">
@@ -45,9 +45,11 @@
     </nav>
 </header>
 <main>
+    <div class="encabezado">
+        <h1><strong>CONTACTANOS</strong> </h1>
+    </div>
     <div class="divForm">
-        <div class="containerForm">
-            <div class="contactanos"><h1>CONTACTANOS</h1></div>
+        <div class="containerForm ">
             <div class="cosas">
                 <h3>Por consultas</h3>
                 <form action="">
@@ -79,7 +81,23 @@
                     <textarea name="" id="" cols="30" rows="10" placeholder="Dejanos tu consulta" style="height: 167px; width: 100%;" > </textarea>
                 </div>
                 <div>
-                    <input class="w-50 btn btn-lg btn-primary p-0" type="submit">
+                    <input class="w-50 btn btn-lg btn-primary p-0" type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Listo!</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Tu consulta se envio correctamente, en breves nos estaremos comunicando con vos ;)
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
