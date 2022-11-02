@@ -3,9 +3,7 @@
     display: grid;
     justify-content: center;
     padding: 3% 2% 3% 2%;
-    margin: 10px;
-    border: 2px solid #f7b613;
-    border-radius: 21px;
+    @include borde-contenedor;
 }
 .boxsucu {  /*<<pensado para pagina de sucursales>>*/
     display: grid;
@@ -53,6 +51,15 @@
         h2{
             text-align: center;
         }
+        .dir{
+            position: absolute;
+            background-color: $fondo-blur-claro;
+            width: min-content;
+            padding: 5px;
+            li{
+                display: block;
+            }
+        }
     }
 }
 @media  (max-width: 1000px){
@@ -88,4 +95,10 @@
         .titsuc3 {grid-area: titsuc3;}
         .titsuc4 {grid-area: titsuc4;}
         }
+}
+@media  (max-width: 430px){
+    .dir{
+        position: absolute;
+        background-color: $fondo-blur-claro
+    }
 }

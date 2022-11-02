@@ -4,6 +4,9 @@ header {
   font-weight: bolder;
   width: 100%; }
 
+main {
+  color: black; }
+
 footer {
   font-size: small;
   color: #0077ff;
@@ -18,34 +21,12 @@ footer {
     object-fit: cover; }
 
 @media (max-width: 890px) {
-  footer {
-    font-size: small;
-    color: #0077ff;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center; }
-    footer img {
-      width: 100%;
-      height: 50%;
-      position: absolute;
-      z-index: -1;
-      object-fit: cover; } }
+  footer img {
+    height: 50%; } }
 
 @media (max-width: 430px) {
-  footer {
-    font-size: small;
-    color: #0077ff;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center; }
-    footer img {
-      width: 100%;
-      height: 90%;
-      position: absolute;
-      z-index: -1;
-      object-fit: cover; } }
+  footer img {
+    height: 90%; } }
 
 .carousel-inner img {
   /*<<pensado para pagina de inicio>>*/
@@ -68,13 +49,8 @@ footer {
 @media (max-width: 600px) {
   .h1index {
     /*<<pensado para pagina de inicio>>*/
-    display: flex;
-    z-index: 10;
-    position: absolute;
-    top: 55%;
     left: 5%;
-    right: 5%;
-    background-color: rgba(255, 255, 255, 0.573); } }
+    right: 5%; } }
 
 .menuScroll {
   /*<<pensado para pagina de menu>*/
@@ -220,6 +196,7 @@ footer {
   .containerProd li:hover img {
     /*movimiento on hover NUEVO */
     opacity: 1;
+    transform: scale(1.15, 1.15);
     transform: scale(1.15, 1.15);
     -webkit-transform: scale(1.15, 1.15);
     -moz-transform: scale(1.15, 1.15);
@@ -368,7 +345,7 @@ footer {
         -ms-transition: all 0.25s ease-in-out;
         transition: all 0.25s ease-in-out; }
       .containerProd li .caption {
-        /*pocicion sobre z imagen hover off NUEVO */
+        /*pocicion sobre z imagen hover off*/
         width: inherit;
         cursor: pointer;
         position: absolute;
@@ -379,17 +356,17 @@ footer {
         -ms-transition: all 0.45s ease-in-out;
         transition: all 0.45s ease-in-out; }
         .containerProd li .caption .blur {
-          /*background on hover NUEVO */
+          /*background on hover*/
           background-color: rgba(0, 0, 0, 0.65);
           height: 410px;
           width: 1000px;
           z-index: 5;
           position: absolute; }
     .containerProd li:hover .caption {
-      /*mostrar texto on hover NUEVO */
+      /*mostrar texto on hover*/
       opacity: 1; }
     .containerProd li:hover img {
-      /*movimiento on hover NUEVO */
+      /*movimiento on hover*/
       opacity: 1;
       transform: scale(1.15, 1.15);
       -webkit-transform: scale(1.15, 1.15);
@@ -454,6 +431,13 @@ footer {
       object-fit: cover; }
     .boxsucu div h2 {
       text-align: center; }
+    .boxsucu div .dir {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.573);
+      width: min-content;
+      padding: 5px; }
+      .boxsucu div .dir li {
+        display: block; }
 
 @media (max-width: 1000px) {
   .boxsucu {
@@ -489,17 +473,19 @@ footer {
     .boxsucu .titsuc4 {
       grid-area: titsuc4; } }
 
+@media (max-width: 430px) {
+  .dir {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.573); } }
+
 .contactos {
-  /*<<pensado para pagina de contato>>*/
   list-style: none;
   flex-direction: column; }
 
 .row d-flex justify-content-center {
-  /*<<pensado para pagina de contato>>*/
   width: 90vw; }
 
 .secContact {
-  /*<<pensado para pagina de contato>>*/
   display: flex;
   justify-content: center;
   flex-direction: column; }
@@ -509,7 +495,6 @@ footer {
   color: #f7b613;
   justify-content: center; }
   .divForm .containerForm {
-    /*<<pensado para pagina de contato>>*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -518,12 +503,12 @@ footer {
     padding: 2%;
     padding-bottom: 20px;
     justify-content: center;
+    margin: 10px;
     border: 2px solid #f7b613;
-    border-radius: 30px;
+    border-radius: 21px;
     grid-auto-flow: row;
     grid-template-areas: "cosas mensaje" "cosas mensaje"; }
     .divForm .containerForm .cosas {
-      /*<<pensado para pagina de contato>>*/
       grid-area: cosas;
       display: inline-grid;
       justify-content: center;
@@ -533,7 +518,6 @@ footer {
         display: contents;
         text-align-last: justify; }
     .divForm .containerForm .mensaje {
-      /*<<pensado para pagina de contato>>*/
       grid-area: mensaje;
       display: flex;
       flex-direction: column;
@@ -541,74 +525,20 @@ footer {
 
 /*<< ESTILOS MEDIA QUERIES >>*/
 @media (max-width: 890px) {
-  .divForm {
-    display: flex;
-    justify-content: center; }
-    .divForm .containerForm {
-      /*<<pensado para pagina de contato>>*/
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      gap: 10px 10px;
-      width: 50vw;
-      padding: 3%;
-      padding-bottom: 20px;
-      justify-content: center;
-      border: 2px solid #f7b613;
-      grid-auto-flow: row;
-      grid-template-areas: "cosas " "mensaje"; }
-      .divForm .containerForm .cosas {
-        /*<<pensado para pagina de contato>>*/
-        grid-area: cosas;
-        display: inline-grid;
-        justify-content: center;
-        align-content: space-between;
-        padding: 2px 2px 2px 2px; }
-        .divForm .containerForm .cosas form {
-          display: contents;
-          text-align-last: justify; }
-      .divForm .containerForm .mensaje {
-        /*<<pensado para pagina de contato>>*/
-        grid-area: mensaje;
-        display: flex;
-        flex-direction: column;
-        justify-content: end; } }
+  /*redistribucion y ancho adaptado*/
+  .divForm .containerForm {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 50vw;
+    padding: 3%;
+    grid-template-areas: "cosas " "mensaje"; } }
 
 @media (max-width: 785px) {
-  .divForm {
-    display: flex;
-    justify-content: center; }
-    .divForm .containerForm {
-      /*<<pensado para pagina de contato>>*/
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      gap: 10px 10px;
-      width: 80vw;
-      padding: 3%;
-      padding-bottom: 20px;
-      justify-content: center;
-      border: 2px solid #f7b613;
-      grid-auto-flow: row;
-      grid-template-areas: "cosas " "mensaje"; }
-      .divForm .containerForm .cosas {
-        /*<<pensado para pagina de contato>>*/
-        grid-area: cosas;
-        display: inline-grid;
-        justify-content: center;
-        align-content: space-between;
-        padding: 2px 2px 2px 2px; }
-        .divForm .containerForm .cosas form {
-          display: contents;
-          text-align-last: justify; }
-          .divForm .containerForm .cosas form div input {
-            width: 80%; }
-      .divForm .containerForm .mensaje {
-        /*<<pensado para pagina de contato>>*/
-        grid-area: mensaje;
-        display: flex;
-        flex-direction: column;
-        justify-content: end; } }
+  /*se ajusta el ancho*/
+  .divForm .containerForm {
+    width: 80vw; }
+    .divForm .containerForm .cosas form div input {
+      width: 80%; } }
 
 * {
   margin: 0px;
@@ -617,6 +547,3 @@ footer {
   font-weight: bold;
   font-family: "Nunito", sans-serif;
   font-weight: bold; }
-
-main {
-  color: black; }

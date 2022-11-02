@@ -16,12 +16,7 @@
 /*<< ESTILOS MEDIA QUERIES >>*/
 @media  (max-width: 600px) {
    .h1index { /*<<pensado para pagina de inicio>>*/
-      display: flex;
-      z-index: 10;
-      position: absolute;
-      top: 55%;
       left: 5%;
       right: 5%;
-      background-color:$fondo-blur-claro
    }
 }

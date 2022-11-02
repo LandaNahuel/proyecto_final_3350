@@ -1,9 +1,7 @@
 .menuScroll{ /*<<pensado para pagina de menu>*/
     justify-content: center;
     padding: 2% 5% 3% 5%;
-    margin: 10px;
-    border: 2px solid $color-pri;
-    border-radius: 21px;
+    @include borde-contenedor;
     .wrap{
         max-width: 1200px;
         margin: 0 auto;

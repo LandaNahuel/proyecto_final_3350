@@ -1,0 +1,40 @@
+
+
+@mixin valores-base {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: $fuente-pri;
+    font-weight: bold;
+}
+
+@mixin animacion1ra {
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    -ms-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+}
+
+@mixin animacion2da {
+    -webkit-transition:all 0.45s ease-in-out;
+    -moz-transition:all 0.45s ease-in-out;
+    -o-transition:all 0.45s ease-in-out;
+    -ms-transition:all 0.45s ease-in-out;
+    transition:all 0.45s ease-in-out;
+}
+
+@mixin animacion3ra {
+    transform: scale(1.15,1.15);
+    -webkit-transform:scale(1.15,1.15);
+    -moz-transform:scale(1.15,1.15);
+    -ms-transform:scale(1.15,1.15);
+    -o-transform:scale(1.15,1.15);
+}
+
+@mixin borde-contenedor {
+    margin: 10px;
+    border: 2px solid $color-pri;
+    border-radius: 21px;
+}

@@ -12,13 +12,5 @@
 @import "contacto";
 
 *{
-   margin: 0px;
-   padding: 0px;
-   box-sizing: border-box;
-   font-weight: bold;
-   font-family: $fuente-pri;
-   font-weight: bold;
-}
-main{
-   color: $fuente-col-pri;
+   @include valores-base;
 }
